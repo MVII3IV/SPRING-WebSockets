@@ -15,6 +15,8 @@ public class Handler extends AbstractWebSocketHandler{
 
     @Override
     public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
+        //session.sendMessage(new TextMessage(""));
+
         System.out.println("Connection closed");
     }
 
